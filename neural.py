@@ -7,7 +7,6 @@ from utilities import *
 # Arrays are represented as lists of (equal-sized) lists. Packages like numpy could
 # speed up computation if needed
 
-
 class NeuralNet:
     """A simple implementation of a neural net. Has three layers - input, output and one
     hidden. Contains three lists to hold the activation values for each of the layers
