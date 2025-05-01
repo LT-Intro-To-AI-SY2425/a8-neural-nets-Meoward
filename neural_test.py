@@ -1,4 +1,4 @@
-from neural import NeuralNet
+from neural import *
 
 print("\n\nTraining RN\n\n")
 rn_training_data = [
@@ -113,7 +113,7 @@ print(sqn.evaluate([0.66]))
 print(sqn.evaluate([0.95]))
 
 print("\n\nTraining XOR\n\n")
-xor_training_data = [([1, 1], [0]), ([1, 0], [1]), ([0, 1], [1]), ([0, 0], [0])]
+xor_training_data = [([0, 0], [1]), ([0, 1], [1]), ([1, 0], [1]), ([1, 1], [0])]
 
 xorn = NeuralNet(2, 1, 1)
 xorn.train(xor_training_data)
